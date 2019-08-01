@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+    function val(){
+        var x=document.forms["myform"]["fname"].value;
+        if (x=="") {
+            alert("name must be filled");
+            return false;
+        }
+    }
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+        
+
+    <h1>login</h1>
+    <form name="myform" onsubmit=" return val();">
+<table class="table">
+    <tr>
+        <td>username</td>
+        <td><input type="text" id="t1" name="fname"></td>
+    </tr>
+    <tr>
+        <td>password</td>
+        <td><input type="password" id="t2"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><button type="button" class="btn btn-success" onclick="getm();">sumbit</button></td>
+    </tr>
+</table>
+</form>
+
+<script src="./login.js"></script>
+</body>
+</html>
